@@ -7,10 +7,10 @@ outputFile="DiffReport.txt"
 $(touch $outputFile)
 
 #First file
-for fileA in *.pgm; do 
+for fileA in *; do 
 
 	#Second File
-	for fileB in *.pgm; do 
+	for fileB in *; do 
 	
 	#we don't care about comparing a file to itself,
 	if [ "$fileA" != "$fileB" ]; then
